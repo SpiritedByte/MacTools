@@ -1,3 +1,10 @@
+# This script should be used with caution. If you have any specific settings such as display resolution
+# or the boot chime is enabled (pre-Big Sur), it will be cleared on restart. It also runs the maintenance
+# scripts that come with macOS. Also, I'm not sure what will happen if you don't have Homebrew installed,
+# and I can't be bothered testing it as this script is mainly for me.
+
+# Tested on macOS 11.0.1 (Big Sur)
+
 if [ `whoami` != root ]; then
     echo Please run this script as root or using sudo
     exit
